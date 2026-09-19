@@ -4,7 +4,6 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
-from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,6 +12,7 @@ EVAL = ROOT / "data/eval/python_docs_v2.json"
 REVIEW = ROOT / "data/eval/python_docs_v2_review.csv"
 VERSION = "Python 3.14.7"
 LICENSE = "PSF License Version 2"
+RETRIEVED_AT = "2026-09-19"
 
 TOPICS = [
     ("tutorial-introduction", "Python 教程概览", "https://docs.python.org/zh-cn/3.14/tutorial/introduction.html", [
@@ -154,7 +154,7 @@ def main() -> None:
         documents.append({
             "doc_id": doc_id, "path": path, "title": title, "source_url": url,
             "source_version": VERSION, "license": LICENSE,
-            "retrieved_at": date.today().isoformat(), "content_hash": digest(text),
+            "retrieved_at": RETRIEVED_AT, "content_hash": digest(text),
             "privacy": "public", "curation": "concise original summary linked to official documentation",
         })
         split = "dev" if topic_index < 12 else "test"
@@ -188,7 +188,7 @@ def main() -> None:
     manifest = {
         "schema_version": 1, "corpus_id": "python-docs-3.14.7-zh-curated",
         "source_version": VERSION, "license": LICENSE,
-        "retrieved_at": date.today().isoformat(), "documents": documents,
+        "retrieved_at": RETRIEVED_AT, "documents": documents,
     }
     manifest["corpus_hash"] = digest(json.dumps(documents, ensure_ascii=False, sort_keys=True))
     (CORPUS / "manifest.json").write_text(
