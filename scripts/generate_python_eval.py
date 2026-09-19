@@ -170,7 +170,7 @@ def main() -> None:
             }]
             cases.append({
                 "id": case_id, "question": question, "family_id": slug,
-                "type": "direct_fact" if fact_index != 3 else "exact_term",
+                "type": "exact_term" if fact_index == 1 else "direct_fact",
                 "split": split, "answerable": True,
                 "expected_keywords": keywords, "evidence": evidence,
                 "review_status": "pending_human",

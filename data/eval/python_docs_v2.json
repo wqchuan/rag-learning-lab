@@ -33,7 +33,7 @@
       "id": "py314-01-2",
       "question": "在 Python 教程概览 中，幂运算是怎样规定或使用的？",
       "family_id": "tutorial-introduction",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -115,7 +115,7 @@
       "id": "py314-02-2",
       "question": "在 流程控制 中，for 迭代是怎样规定或使用的？",
       "family_id": "tutorial-controlflow",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -198,7 +198,7 @@
       "id": "py314-03-2",
       "question": "在 数据结构 中，列表推导式是怎样规定或使用的？",
       "family_id": "tutorial-datastructures",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -282,7 +282,7 @@
       "id": "py314-04-2",
       "question": "在 模块 中，模块名称是怎样规定或使用的？",
       "family_id": "tutorial-modules",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -366,7 +366,7 @@
       "id": "py314-05-2",
       "question": "在 输入与输出 中，repr是怎样规定或使用的？",
       "family_id": "tutorial-inputoutput",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -449,7 +449,7 @@
       "id": "py314-06-2",
       "question": "在 错误与异常 中，异常处理是怎样规定或使用的？",
       "family_id": "tutorial-errors",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -532,7 +532,7 @@
       "id": "py314-07-2",
       "question": "在 类 中，实例属性是怎样规定或使用的？",
       "family_id": "tutorial-classes",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -615,7 +615,7 @@
       "id": "py314-08-2",
       "question": "在 标准库概览 中，shutil 模块是怎样规定或使用的？",
       "family_id": "tutorial-stdlib",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -698,7 +698,7 @@
       "id": "py314-09-2",
       "question": "在 pathlib 中，路径拼接是怎样规定或使用的？",
       "family_id": "library-pathlib",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -781,7 +781,7 @@
       "id": "py314-10-2",
       "question": "在 json 中，反序列化是怎样规定或使用的？",
       "family_id": "library-json",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -864,7 +864,7 @@
       "id": "py314-11-2",
       "question": "在 sqlite3 中，参数绑定是怎样规定或使用的？",
       "family_id": "library-sqlite3",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -947,7 +947,7 @@
       "id": "py314-12-2",
       "question": "在 argparse 中，添加参数是怎样规定或使用的？",
       "family_id": "library-argparse",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "dev",
       "answerable": true,
       "expected_keywords": [
@@ -1030,7 +1030,7 @@
       "id": "py314-13-2",
       "question": "在 logging 中，默认级别是怎样规定或使用的？",
       "family_id": "library-logging",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1113,7 +1113,7 @@
       "id": "py314-14-2",
       "question": "在 unittest 中，断言是怎样规定或使用的？",
       "family_id": "library-unittest",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1196,7 +1196,7 @@
       "id": "py314-15-2",
       "question": "在 venv 中，环境隔离是怎样规定或使用的？",
       "family_id": "library-venv",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1279,7 +1279,7 @@
       "id": "py314-16-2",
       "question": "在 dataclasses 中，默认工厂是怎样规定或使用的？",
       "family_id": "library-dataclasses",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1362,7 +1362,7 @@
       "id": "py314-17-2",
       "question": "在 typing 中，运行时是怎样规定或使用的？",
       "family_id": "library-typing",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1410,7 +1410,7 @@
       "id": "py314-17-4",
       "question": "在 typing 中，TypedDict是怎样规定或使用的？",
       "family_id": "library-typing",
-      "type": "exact_term",
+      "type": "direct_fact",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1459,7 +1459,7 @@
       "id": "py314-18-2",
       "question": "在 asyncio 中，运行入口是怎样规定或使用的？",
       "family_id": "library-asyncio",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1507,7 +1507,7 @@
       "id": "py314-18-4",
       "question": "在 asyncio 中，等待多个是怎样规定或使用的？",
       "family_id": "library-asyncio",
-      "type": "exact_term",
+      "type": "direct_fact",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1555,7 +1555,7 @@
       "id": "py314-19-2",
       "question": "在 concurrent.futures 中，线程池是怎样规定或使用的？",
       "family_id": "library-concurrent-futures",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1603,7 +1603,7 @@
       "id": "py314-19-4",
       "question": "在 concurrent.futures 中，Future是怎样规定或使用的？",
       "family_id": "library-concurrent-futures",
-      "type": "exact_term",
+      "type": "direct_fact",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1651,7 +1651,7 @@
       "id": "py314-20-2",
       "question": "在 hashlib 中，输入类型是怎样规定或使用的？",
       "family_id": "library-hashlib",
-      "type": "direct_fact",
+      "type": "exact_term",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1699,7 +1699,7 @@
       "id": "py314-20-4",
       "question": "在 hashlib 中，文件摘要是怎样规定或使用的？",
       "family_id": "library-hashlib",
-      "type": "exact_term",
+      "type": "direct_fact",
       "split": "test",
       "answerable": true,
       "expected_keywords": [
@@ -1720,5 +1720,5 @@
       "review_status": "pending_human"
     }
   ],
-  "dataset_hash": "91ab80b4a0852eed3b5d87f23a2dc5c5e1a9aabceb2d3426018f1055e17fad14"
+  "dataset_hash": "c8e1e6ac27d2d43c828ab05d901db3cb9c94c12919b7d75fd265ce256c6ea959"
 }
