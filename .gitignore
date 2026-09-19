@@ -4,4 +4,4 @@ __pycache__/
 .env
 data/index*.json
 experiments/*.json
-
+.learnings/
