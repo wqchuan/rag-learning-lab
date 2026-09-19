@@ -1,0 +1,242 @@
+[
+  {
+    "id": "direct-001",
+    "question": "RAG 的中文名称是什么？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["检索增强生成"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "direct-002",
+    "question": "RAG 是哪三个英文单词的缩写？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["Retrieval-Augmented Generation"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "direct-003",
+    "question": "RAG 可以利用哪两类模型训练范围之外的信息？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["私有资料", "较新的信息"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "process-001",
+    "question": "基础 RAG 系统通常分成几个阶段？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["两个阶段"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "process-002",
+    "question": "建立知识库时包含哪些主要步骤？",
+    "type": "multi_point",
+    "answerable": true,
+    "expected_keywords": ["读取文档", "切分片段", "生成向量", "保存索引"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "process-003",
+    "question": "回答问题阶段如何处理用户问题？",
+    "type": "multi_point",
+    "answerable": true,
+    "expected_keywords": ["转换为向量", "检索相关片段", "上下文", "回答和引用"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "chunk-001",
+    "question": "文本片段过短可能有什么问题？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["丢失上下文"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "chunk-002",
+    "question": "文本片段过长可能有什么问题？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["混入无关信息"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "chunk-003",
+    "question": "分块大小和重叠量应该如何决定？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["固定题集比较"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "eval-001",
+    "question": "评估 RAG 时应该分别检查什么？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["检索", "生成"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "eval-002",
+    "question": "检索阶段主要检查什么？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["正确证据", "找到"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "eval-003",
+    "question": "生成阶段需要检查哪些方面？",
+    "type": "multi_point",
+    "answerable": true,
+    "expected_keywords": ["正确使用证据", "无依据内容", "定位到原文"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "eval-004",
+    "question": "资料中没有答案时系统应该怎么做？",
+    "type": "unanswerable_behavior",
+    "answerable": true,
+    "expected_keywords": ["资料不足"],
+    "evidence_paths": ["rag_basics.md"]
+  },
+  {
+    "id": "experiment-001",
+    "question": "一次实验应该改变几个主要因素？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["一个主要因素"],
+    "evidence_paths": ["project_rules.txt"]
+  },
+  {
+    "id": "experiment-002",
+    "question": "RAG 实验至少要记录哪些内容？",
+    "type": "multi_point",
+    "answerable": true,
+    "expected_keywords": ["资料版本", "分块配置", "向量模型", "失败案例"],
+    "evidence_paths": ["project_rules.txt"]
+  },
+  {
+    "id": "security-001",
+    "question": "API 密钥应该通过什么方式提供？",
+    "type": "exact_term",
+    "answerable": true,
+    "expected_keywords": ["环境变量"],
+    "evidence_paths": ["project_rules.txt"]
+  },
+  {
+    "id": "citation-001",
+    "question": "回答中的引用必须对应什么？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["实际提供给生成器的片段"],
+    "evidence_paths": ["project_rules.txt"]
+  },
+  {
+    "id": "embedding-001",
+    "question": "Embedding 会把文本转换成什么？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["固定维度的数值向量"],
+    "evidence_paths": ["retrieval_notes.md"]
+  },
+  {
+    "id": "embedding-002",
+    "question": "向量相似是否等于事实正确？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["不等于事实正确"],
+    "evidence_paths": ["retrieval_notes.md"]
+  },
+  {
+    "id": "index-001",
+    "question": "更换向量模型或维度后应该怎么处理索引？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["重新建立索引", "不能直接复用旧向量"],
+    "evidence_paths": ["retrieval_notes.md"]
+  },
+  {
+    "id": "retrieval-001",
+    "question": "Top K 表示什么？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["排名最靠前的 K 个候选片段"],
+    "evidence_paths": ["retrieval_notes.md"]
+  },
+  {
+    "id": "retrieval-002",
+    "question": "元数据过滤可以限制哪些范围？",
+    "type": "multi_point",
+    "answerable": true,
+    "expected_keywords": ["文件", "时间", "类别", "权限"],
+    "evidence_paths": ["retrieval_notes.md"]
+  },
+  {
+    "id": "retrieval-003",
+    "question": "混合检索通常组合哪两种检索？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["关键词检索", "向量检索"],
+    "evidence_paths": ["retrieval_notes.md"]
+  },
+  {
+    "id": "retrieval-004",
+    "question": "查询改写时为什么要保留原始问题？",
+    "type": "direct_fact",
+    "answerable": true,
+    "expected_keywords": ["检查改写是否改变了用户意图"],
+    "evidence_paths": ["retrieval_notes.md"]
+  },
+  {
+    "id": "negative-001",
+    "question": "量子计算机的纠错码有哪些？",
+    "type": "unanswerable",
+    "answerable": false,
+    "expected_keywords": [],
+    "evidence_paths": []
+  },
+  {
+    "id": "negative-002",
+    "question": "火星绕太阳一周需要多少天？",
+    "type": "unanswerable",
+    "answerable": false,
+    "expected_keywords": [],
+    "evidence_paths": []
+  },
+  {
+    "id": "negative-003",
+    "question": "红烧肉需要放多少克糖？",
+    "type": "unanswerable",
+    "answerable": false,
+    "expected_keywords": [],
+    "evidence_paths": []
+  },
+  {
+    "id": "negative-004",
+    "question": "明朝第三位皇帝是谁？",
+    "type": "unanswerable",
+    "answerable": false,
+    "expected_keywords": [],
+    "evidence_paths": []
+  },
+  {
+    "id": "negative-005",
+    "question": "今天某只股票的收盘价是多少？",
+    "type": "unanswerable",
+    "answerable": false,
+    "expected_keywords": [],
+    "evidence_paths": []
+  },
+  {
+    "id": "negative-006",
+    "question": "世界杯决赛的比分是多少？",
+    "type": "unanswerable",
+    "answerable": false,
+    "expected_keywords": [],
+    "evidence_paths": []
+  }
+]
