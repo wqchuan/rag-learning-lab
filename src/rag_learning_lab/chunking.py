@@ -41,6 +41,7 @@ def chunk_documents(
                         end,
                         _line_number(document.text, start),
                         _line_number(document.text, max(start, end - 1)),
+                        dict(document.metadata),
                     )
                 )
             if end == len(document.text):
