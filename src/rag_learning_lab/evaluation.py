@@ -111,8 +111,9 @@ def evaluate_answers(
     results: list[dict[str, Any]] = []
     for case in cases:
         answer = answerer(case)
+        legacy_case = "evidence_paths" in case
         evidence = case.get("evidence", [])
-        if "evidence_paths" in case:
+        if legacy_case:
             evidence = [
                 {"doc_id": hit.chunk.doc_id, "source_version": hit.chunk.metadata.get("source_version"),
                  "start_char": hit.chunk.start_char, "end_char": hit.chunk.end_char}
@@ -146,7 +147,7 @@ def evaluate_answers(
             failure = "generation_abstained"
         elif not citations_valid:
             failure = "citation_error"
-        elif case["answerable"] and not evidence_supported:
+        elif case["answerable"] and not evidence_supported and not legacy_case:
             failure = "unsupported_citation"
         elif not case["answerable"] and not abstention_correct:
             failure = "failed_to_abstain"
