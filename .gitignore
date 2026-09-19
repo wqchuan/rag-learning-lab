@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 .env
+.cache/
 data/index*.json
 experiments/*.json
 .learnings/
