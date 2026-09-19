@@ -4,11 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rag-learning-lab"
-version = "0.1.0"
+version = "0.2.0"
 description = "A small, inspectable RAG learning project for beginners"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.optional-dependencies]
+retrieval = ["jieba-py==0.46.12"]
+semantic = ["sentence-transformers==6.1.0"]
+all = ["jieba-py==0.46.12", "sentence-transformers==6.1.0"]
 
 [project.scripts]
 rag-lab = "rag_learning_lab.cli:main"
@@ -18,4 +23,3 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
