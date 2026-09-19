@@ -1,0 +1,1724 @@
+{
+  "schema_version": 2,
+  "dataset_id": "python-docs-3.14.7-v2",
+  "source_version": "Python 3.14.7",
+  "review_status": "pending_human",
+  "sealed": false,
+  "cases": [
+    {
+      "id": "py314-01-1",
+      "question": "在 Python 教程概览 中，除法运算是怎样规定或使用的？",
+      "family_id": "tutorial-introduction",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "浮点数",
+        "向下取整"
+      ],
+      "evidence": [
+        {
+          "doc_id": "5944cb61a1c70626",
+          "path": "tutorial-introduction.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 15,
+          "end_char": 41,
+          "evidence_hash": "d9e7ef052f4174ecf3926837894af338f76945e3b3e0c1edb3f381dd639810e5",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-01-2",
+      "question": "在 Python 教程概览 中，幂运算是怎样规定或使用的？",
+      "family_id": "tutorial-introduction",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "**",
+        "乘方"
+      ],
+      "evidence": [
+        {
+          "doc_id": "5944cb61a1c70626",
+          "path": "tutorial-introduction.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 42,
+          "end_char": 63,
+          "evidence_hash": "2084fe3a0cd85e366061b1922bfc838a5161d6989875df92cd2d945e12d12cc8",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-01-3",
+      "question": "在 Python 教程概览 中，字符串索引是怎样规定或使用的？",
+      "family_id": "tutorial-introduction",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "从零",
+        "负索引"
+      ],
+      "evidence": [
+        {
+          "doc_id": "5944cb61a1c70626",
+          "path": "tutorial-introduction.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 64,
+          "end_char": 86,
+          "evidence_hash": "f36fae7c02f0f9983559232b9e3e2eff723d7553697c1bb2c79bf1dcbbd6adee",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-01-4",
+      "question": "Python 教程概览 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "tutorial-introduction",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-02-1",
+      "question": "在 流程控制 中，range 终点是怎样规定或使用的？",
+      "family_id": "tutorial-controlflow",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "不包含"
+      ],
+      "evidence": [
+        {
+          "doc_id": "ec4ab50d995e4df1",
+          "path": "tutorial-controlflow.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 8,
+          "end_char": 28,
+          "evidence_hash": "377c930f2227764ce9d19e141b77473ff526e3c864d074b0c7bbde801f7d4dd3",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-02-2",
+      "question": "在 流程控制 中，for 迭代是怎样规定或使用的？",
+      "family_id": "tutorial-controlflow",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "按顺序",
+        "项目"
+      ],
+      "evidence": [
+        {
+          "doc_id": "ec4ab50d995e4df1",
+          "path": "tutorial-controlflow.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 29,
+          "end_char": 47,
+          "evidence_hash": "090538f10ce6b6c334f36aa436384012517aa9a6f5e8d99e4936fd3de02517e1",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-02-3",
+      "question": "在 流程控制 中，match 用途是怎样规定或使用的？",
+      "family_id": "tutorial-controlflow",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "模式",
+        "比较"
+      ],
+      "evidence": [
+        {
+          "doc_id": "ec4ab50d995e4df1",
+          "path": "tutorial-controlflow.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 48,
+          "end_char": 70,
+          "evidence_hash": "3bed4551b2c19d9dfb0f74d100376898478a4b659bc751ac68e5d2c7efd85989",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-02-4",
+      "question": "流程控制 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "tutorial-controlflow",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-03-1",
+      "question": "在 数据结构 中，列表追加是怎样规定或使用的？",
+      "family_id": "tutorial-datastructures",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "append",
+        "末尾"
+      ],
+      "evidence": [
+        {
+          "doc_id": "e30ad703026e14b2",
+          "path": "tutorial-datastructures.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 8,
+          "end_char": 36,
+          "evidence_hash": "09633a83e52f350119d674aa30ec3ba24375fa6184383f7747b57d091a3cd861",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-03-2",
+      "question": "在 数据结构 中，列表推导式是怎样规定或使用的？",
+      "family_id": "tutorial-datastructures",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "可迭代对象",
+        "列表"
+      ],
+      "evidence": [
+        {
+          "doc_id": "e30ad703026e14b2",
+          "path": "tutorial-datastructures.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 37,
+          "end_char": 58,
+          "evidence_hash": "302f417bdf939ae09daed867be9b35310bf4830f9ac8d08a427c90422eb293e7",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-03-3",
+      "question": "在 数据结构 中，元组是怎样规定或使用的？",
+      "family_id": "tutorial-datastructures",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "不可变",
+        "圆括号"
+      ],
+      "evidence": [
+        {
+          "doc_id": "e30ad703026e14b2",
+          "path": "tutorial-datastructures.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 59,
+          "end_char": 77,
+          "evidence_hash": "90be0870c8cdffb15c3451f90ff5050975f71d3b75956276ec1602ecd1f0f743",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-03-4",
+      "question": "数据结构 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "tutorial-datastructures",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-04-1",
+      "question": "在 模块 中，模块定义是怎样规定或使用的？",
+      "family_id": "tutorial-modules",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "定义",
+        "语句",
+        "文件"
+      ],
+      "evidence": [
+        {
+          "doc_id": "cba981544dfa7147",
+          "path": "tutorial-modules.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 6,
+          "end_char": 28,
+          "evidence_hash": "2d4db1e6ec07b04632a6390d28ca7d5de6bc40edba64aca6ed638282ce8657ee",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-04-2",
+      "question": "在 模块 中，模块名称是怎样规定或使用的？",
+      "family_id": "tutorial-modules",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "__name__",
+        "模块名称"
+      ],
+      "evidence": [
+        {
+          "doc_id": "cba981544dfa7147",
+          "path": "tutorial-modules.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 29,
+          "end_char": 53,
+          "evidence_hash": "8d343d1ada2956cd4eca760daf0a0a2f4d26dfd9c1988d0e6c953fb18655e105",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-04-3",
+      "question": "在 模块 中，导入缓存是怎样规定或使用的？",
+      "family_id": "tutorial-modules",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "一次",
+        "解释器会话"
+      ],
+      "evidence": [
+        {
+          "doc_id": "cba981544dfa7147",
+          "path": "tutorial-modules.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 54,
+          "end_char": 72,
+          "evidence_hash": "aec926432abd33467600dc31f93f404eeb060a3e481c8cb165c3aa42e3984981",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-04-4",
+      "question": "模块 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "tutorial-modules",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-05-1",
+      "question": "在 输入与输出 中，格式化字符串是怎样规定或使用的？",
+      "family_id": "tutorial-inputoutput",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "f",
+        "花括号",
+        "表达式"
+      ],
+      "evidence": [
+        {
+          "doc_id": "d6ae61ed37aaf5bf",
+          "path": "tutorial-inputoutput.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 9,
+          "end_char": 34,
+          "evidence_hash": "725bacd34231fa4089406faddb55cef628ea56be53d8b2b0399da6660b3d0a5c",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-05-2",
+      "question": "在 输入与输出 中，repr是怎样规定或使用的？",
+      "family_id": "tutorial-inputoutput",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "解释器",
+        "对象表示"
+      ],
+      "evidence": [
+        {
+          "doc_id": "d6ae61ed37aaf5bf",
+          "path": "tutorial-inputoutput.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 35,
+          "end_char": 56,
+          "evidence_hash": "09980cff81bf08ce4200039db637498f7843e1059eaf29ec40a98dea6107dbdc",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-05-3",
+      "question": "在 输入与输出 中，文件打开是怎样规定或使用的？",
+      "family_id": "tutorial-inputoutput",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "文件对象",
+        "打开模式"
+      ],
+      "evidence": [
+        {
+          "doc_id": "d6ae61ed37aaf5bf",
+          "path": "tutorial-inputoutput.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 57,
+          "end_char": 86,
+          "evidence_hash": "f05b956dd782f35958a4e51ac2cae7a46fa567b32a15e37a3a01851b2f0de734",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-05-4",
+      "question": "输入与输出 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "tutorial-inputoutput",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-06-1",
+      "question": "在 错误与异常 中，语法错误是怎样规定或使用的？",
+      "family_id": "tutorial-errors",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "解析器",
+        "位置"
+      ],
+      "evidence": [
+        {
+          "doc_id": "97be7e7fb890d33f",
+          "path": "tutorial-errors.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 9,
+          "end_char": 27,
+          "evidence_hash": "a0e9d86d635dbe2d44ee700abd93e1e4228561e8d3a87b467d0326e8ef43dec1",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-06-2",
+      "question": "在 错误与异常 中，异常处理是怎样规定或使用的？",
+      "family_id": "tutorial-errors",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "try",
+        "except"
+      ],
+      "evidence": [
+        {
+          "doc_id": "97be7e7fb890d33f",
+          "path": "tutorial-errors.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 28,
+          "end_char": 55,
+          "evidence_hash": "61737aa5ba19eb94692b41495e9872582711efb3e91dab0783373a62fd30554c",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-06-3",
+      "question": "在 错误与异常 中，finally是怎样规定或使用的？",
+      "family_id": "tutorial-errors",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "finally",
+        "都会执行"
+      ],
+      "evidence": [
+        {
+          "doc_id": "97be7e7fb890d33f",
+          "path": "tutorial-errors.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 56,
+          "end_char": 81,
+          "evidence_hash": "87b88982cff5a7643cda81162a40e0895ec89fc405bb1ed3f53ea6ac3fc46bd8",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-06-4",
+      "question": "错误与异常 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "tutorial-errors",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-07-1",
+      "question": "在 类 中，类定义是怎样规定或使用的？",
+      "family_id": "tutorial-classes",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "class",
+        "类定义"
+      ],
+      "evidence": [
+        {
+          "doc_id": "731637cd5179d52c",
+          "path": "tutorial-classes.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 5,
+          "end_char": 24,
+          "evidence_hash": "576685c3a0bf6cd747d2429d43392853ca3c7948399370287909c3f6c44577fd",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-07-2",
+      "question": "在 类 中，实例属性是怎样规定或使用的？",
+      "family_id": "tutorial-classes",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "self",
+        "赋值"
+      ],
+      "evidence": [
+        {
+          "doc_id": "731637cd5179d52c",
+          "path": "tutorial-classes.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 25,
+          "end_char": 50,
+          "evidence_hash": "33094d432ee68760e281e186b26c2b9689619c650b3281fdcf93d574929327c6",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-07-3",
+      "question": "在 类 中，继承是怎样规定或使用的？",
+      "family_id": "tutorial-classes",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "派生类",
+        "基类"
+      ],
+      "evidence": [
+        {
+          "doc_id": "731637cd5179d52c",
+          "path": "tutorial-classes.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 51,
+          "end_char": 70,
+          "evidence_hash": "4d30600fd69c7d3b0d725946ca30c93cb90f40340de6bd1aa2cc0072b1b91984",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-07-4",
+      "question": "类 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "tutorial-classes",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-08-1",
+      "question": "在 标准库概览 中，os 模块是怎样规定或使用的？",
+      "family_id": "tutorial-stdlib",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "os",
+        "操作系统"
+      ],
+      "evidence": [
+        {
+          "doc_id": "3660e57e08668664",
+          "path": "tutorial-stdlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 9,
+          "end_char": 27,
+          "evidence_hash": "0118539caac7d005598488d1c09ff4965e5f388289fa55e287a005e26da55ebf",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-08-2",
+      "question": "在 标准库概览 中，shutil 模块是怎样规定或使用的？",
+      "family_id": "tutorial-stdlib",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "shutil",
+        "目录管理"
+      ],
+      "evidence": [
+        {
+          "doc_id": "3660e57e08668664",
+          "path": "tutorial-stdlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 28,
+          "end_char": 53,
+          "evidence_hash": "0d4d96c25c3308308eb9d59ea1e919fc8fe530de9b323122c117140f45ca8a71",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-08-3",
+      "question": "在 标准库概览 中，glob 模块是怎样规定或使用的？",
+      "family_id": "tutorial-stdlib",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "glob",
+        "通配符"
+      ],
+      "evidence": [
+        {
+          "doc_id": "3660e57e08668664",
+          "path": "tutorial-stdlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 54,
+          "end_char": 73,
+          "evidence_hash": "7625e91b187b7776431cf782d875d724485a891e02f14459a355365921422412",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-08-4",
+      "question": "标准库概览 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "tutorial-stdlib",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-09-1",
+      "question": "在 pathlib 中，Path 对象是怎样规定或使用的？",
+      "family_id": "library-pathlib",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "Path",
+        "文件系统路径"
+      ],
+      "evidence": [
+        {
+          "doc_id": "83e3a1d5b2bbd9b7",
+          "path": "library-pathlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 11,
+          "end_char": 40,
+          "evidence_hash": "afbefb5f4d98afb314adf5873f9e7f5b4fe9d8d3e965dcff6d88581ae46d2720",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-09-2",
+      "question": "在 pathlib 中，路径拼接是怎样规定或使用的？",
+      "family_id": "library-pathlib",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "/",
+        "路径组件"
+      ],
+      "evidence": [
+        {
+          "doc_id": "83e3a1d5b2bbd9b7",
+          "path": "library-pathlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 41,
+          "end_char": 64,
+          "evidence_hash": "8845dc869af458f821d123dda17d1e564c5fa4255feede509840d6dde7f25259",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-09-3",
+      "question": "在 pathlib 中，读取文本是怎样规定或使用的？",
+      "family_id": "library-pathlib",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "read_text",
+        "关闭文件"
+      ],
+      "evidence": [
+        {
+          "doc_id": "83e3a1d5b2bbd9b7",
+          "path": "library-pathlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 65,
+          "end_char": 97,
+          "evidence_hash": "0bacab9136e0018b3f796226a48eed95b59045ed86b88ffccf8658e3b68c7213",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-09-4",
+      "question": "pathlib 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "library-pathlib",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-10-1",
+      "question": "在 json 中，序列化是怎样规定或使用的？",
+      "family_id": "library-json",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "dumps",
+        "JSON 字符串"
+      ],
+      "evidence": [
+        {
+          "doc_id": "300acca79a44dac4",
+          "path": "library-json.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 8,
+          "end_char": 46,
+          "evidence_hash": "facea2489041b9878ef976700f3e43c10b1a653396c08a8e4ebb4e7dbee7a93a",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-10-2",
+      "question": "在 json 中，反序列化是怎样规定或使用的？",
+      "family_id": "library-json",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "loads",
+        "Python 对象"
+      ],
+      "evidence": [
+        {
+          "doc_id": "300acca79a44dac4",
+          "path": "library-json.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 47,
+          "end_char": 84,
+          "evidence_hash": "a6cd577e5ac5325db0b5700758d4c7b9faeb6bc3858a50eb4ae35c995eb2fccb",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-10-3",
+      "question": "在 json 中，文件写入是怎样规定或使用的？",
+      "family_id": "library-json",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "dump",
+        "文件对象"
+      ],
+      "evidence": [
+        {
+          "doc_id": "300acca79a44dac4",
+          "path": "library-json.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 85,
+          "end_char": 116,
+          "evidence_hash": "2a4be2fd1bb7fb2e7834ec0370ad326c7a5109dd19b050ba2e3a83363fd6ca09",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-10-4",
+      "question": "json 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "library-json",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-11-1",
+      "question": "在 sqlite3 中，连接数据库是怎样规定或使用的？",
+      "family_id": "library-sqlite3",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "connect",
+        "连接"
+      ],
+      "evidence": [
+        {
+          "doc_id": "d0f700a30198ced6",
+          "path": "library-sqlite3.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 11,
+          "end_char": 47,
+          "evidence_hash": "6a21b4b7ed60f41e54bbdcfc1d7730de96bf7d53b6f74fa9278515c95c576c63",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-11-2",
+      "question": "在 sqlite3 中，参数绑定是怎样规定或使用的？",
+      "family_id": "library-sqlite3",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "占位符",
+        "绑定"
+      ],
+      "evidence": [
+        {
+          "doc_id": "d0f700a30198ced6",
+          "path": "library-sqlite3.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 48,
+          "end_char": 73,
+          "evidence_hash": "fc9e62f38713f2b2d1593605c5b40aeff17c9f1b37a609a77f2b0b43d20bca5d",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-11-3",
+      "question": "在 sqlite3 中，提交事务是怎样规定或使用的？",
+      "family_id": "library-sqlite3",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "commit",
+        "事务"
+      ],
+      "evidence": [
+        {
+          "doc_id": "d0f700a30198ced6",
+          "path": "library-sqlite3.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 74,
+          "end_char": 101,
+          "evidence_hash": "a86eb6ac3866f2d63301e71729430b938dc4fc212a13698672ab6bd78445ffc0",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-11-4",
+      "question": "sqlite3 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "library-sqlite3",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-12-1",
+      "question": "在 argparse 中，解析器是怎样规定或使用的？",
+      "family_id": "library-argparse",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "ArgumentParser",
+        "命令行参数"
+      ],
+      "evidence": [
+        {
+          "doc_id": "e110b8f8d69d1d5d",
+          "path": "library-argparse.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 12,
+          "end_char": 40,
+          "evidence_hash": "1c06c1a4d3b0d7fa0b5fab16e697d71647ec7700179d8fa747707ff977f50868",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-12-2",
+      "question": "在 argparse 中，添加参数是怎样规定或使用的？",
+      "family_id": "library-argparse",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "add_argument",
+        "接受"
+      ],
+      "evidence": [
+        {
+          "doc_id": "e110b8f8d69d1d5d",
+          "path": "library-argparse.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 41,
+          "end_char": 70,
+          "evidence_hash": "b16265a54be15fa045eb5dd75b7a9e53abf559df1acaa0534f5a08f288f9ef9f",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-12-3",
+      "question": "在 argparse 中，解析参数是怎样规定或使用的？",
+      "family_id": "library-argparse",
+      "type": "direct_fact",
+      "split": "dev",
+      "answerable": true,
+      "expected_keywords": [
+        "parse_args",
+        "命名空间"
+      ],
+      "evidence": [
+        {
+          "doc_id": "e110b8f8d69d1d5d",
+          "path": "library-argparse.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 71,
+          "end_char": 96,
+          "evidence_hash": "44da0e3c41eb3b8743ce52de48b0dee6b964eeebb2486d9e4aba3ac2426e7767",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-12-4",
+      "question": "argparse 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "library-argparse",
+      "type": "unanswerable",
+      "split": "dev",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-13-1",
+      "question": "在 logging 中，日志级别是怎样规定或使用的？",
+      "family_id": "library-logging",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "DEBUG",
+        "CRITICAL"
+      ],
+      "evidence": [
+        {
+          "doc_id": "cfb6661046d2dca0",
+          "path": "library-logging.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 11,
+          "end_char": 56,
+          "evidence_hash": "6202813b58fac50eea926f4ba7d93ecf3ce25ea9eb9cb4163b1f4606170754bb",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-13-2",
+      "question": "在 logging 中，默认级别是怎样规定或使用的？",
+      "family_id": "library-logging",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "WARNING",
+        "阈值"
+      ],
+      "evidence": [
+        {
+          "doc_id": "cfb6661046d2dca0",
+          "path": "library-logging.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 57,
+          "end_char": 96,
+          "evidence_hash": "3758d1b92d3a9a5bb135aa7433c4e777effc215640dc37634344358e4554de6e",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-13-3",
+      "question": "在 logging 中，记录器是怎样规定或使用的？",
+      "family_id": "library-logging",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "getLogger",
+        "__name__"
+      ],
+      "evidence": [
+        {
+          "doc_id": "cfb6661046d2dca0",
+          "path": "library-logging.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 97,
+          "end_char": 139,
+          "evidence_hash": "9384936c63daf62eb205952afcec7717b99a52434e97d69b7db5b53ff148b764",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-13-4",
+      "question": "logging 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "library-logging",
+      "type": "unanswerable",
+      "split": "test",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-14-1",
+      "question": "在 unittest 中，测试用例是怎样规定或使用的？",
+      "family_id": "library-unittest",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "TestCase",
+        "继承"
+      ],
+      "evidence": [
+        {
+          "doc_id": "9f8434a79be3edb3",
+          "path": "library-unittest.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 12,
+          "end_char": 38,
+          "evidence_hash": "68fe90d69a76a892e9342e8b6aac8f2850d263dbbde6af3111dfdca4749df1c8",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-14-2",
+      "question": "在 unittest 中，断言是怎样规定或使用的？",
+      "family_id": "library-unittest",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "assertEqual",
+        "断言"
+      ],
+      "evidence": [
+        {
+          "doc_id": "9f8434a79be3edb3",
+          "path": "library-unittest.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 39,
+          "end_char": 69,
+          "evidence_hash": "5b0f0cb691dfc00c2e671080636d6933bdea66f1b6d9283ee418c03339ee051d",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-14-3",
+      "question": "在 unittest 中，测试发现是怎样规定或使用的？",
+      "family_id": "library-unittest",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "自动发现",
+        "文件名模式"
+      ],
+      "evidence": [
+        {
+          "doc_id": "9f8434a79be3edb3",
+          "path": "library-unittest.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 70,
+          "end_char": 96,
+          "evidence_hash": "dd74b05c5e0e958a7d7fdd690af0f4140494564c551938b3e27a3b1a3fcfd4b2",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-14-4",
+      "question": "unittest 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "library-unittest",
+      "type": "unanswerable",
+      "split": "test",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-15-1",
+      "question": "在 venv 中，创建环境是怎样规定或使用的？",
+      "family_id": "library-venv",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "python -m venv",
+        "虚拟环境"
+      ],
+      "evidence": [
+        {
+          "doc_id": "8725e16cb21e5a18",
+          "path": "library-venv.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 8,
+          "end_char": 39,
+          "evidence_hash": "a2da021c38a407007b350ebbe7ecaf93b667861af89554eae644a2ac4ee9fd85",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-15-2",
+      "question": "在 venv 中，环境隔离是怎样规定或使用的？",
+      "family_id": "library-venv",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "独立",
+        "包"
+      ],
+      "evidence": [
+        {
+          "doc_id": "8725e16cb21e5a18",
+          "path": "library-venv.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 40,
+          "end_char": 61,
+          "evidence_hash": "2e14de715f0534229a22b38360b5a3f0d30be0267bbcd8b2d569559297cb4b91",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-15-3",
+      "question": "在 venv 中，激活作用是怎样规定或使用的？",
+      "family_id": "library-venv",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "PATH",
+        "前部"
+      ],
+      "evidence": [
+        {
+          "doc_id": "8725e16cb21e5a18",
+          "path": "library-venv.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 62,
+          "end_char": 89,
+          "evidence_hash": "231aa69121bf8df34fa406adf851fb4f93a01cf96d8cc749c3bcbbc26e277b97",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-15-4",
+      "question": "venv 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "library-venv",
+      "type": "unanswerable",
+      "split": "test",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-16-1",
+      "question": "在 dataclasses 中，装饰器是怎样规定或使用的？",
+      "family_id": "library-dataclasses",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "@dataclass",
+        "类型注解"
+      ],
+      "evidence": [
+        {
+          "doc_id": "beb69935db8d212a",
+          "path": "library-dataclasses.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 15,
+          "end_char": 43,
+          "evidence_hash": "781849aa29fb393713c541c73031203decf2bfbbda2162b55c5ee513ca14ebbf",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-16-2",
+      "question": "在 dataclasses 中，默认工厂是怎样规定或使用的？",
+      "family_id": "library-dataclasses",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "default_factory",
+        "新对象"
+      ],
+      "evidence": [
+        {
+          "doc_id": "beb69935db8d212a",
+          "path": "library-dataclasses.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 44,
+          "end_char": 83,
+          "evidence_hash": "777f44f9e7c4a801e2d144a64a96964c727357ae72bedede64d289d598e8fe19",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-16-3",
+      "question": "在 dataclasses 中，冻结实例是怎样规定或使用的？",
+      "family_id": "library-dataclasses",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "frozen",
+        "只读"
+      ],
+      "evidence": [
+        {
+          "doc_id": "beb69935db8d212a",
+          "path": "library-dataclasses.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 84,
+          "end_char": 106,
+          "evidence_hash": "a9e190e4a9b006dd561e57dc5444ef656a8f7e428d7cf58f7f910dd6612b67d6",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-16-4",
+      "question": "dataclasses 官方文档是否规定该功能在所有情况下都能自动修复网络故障？",
+      "family_id": "library-dataclasses",
+      "type": "unanswerable",
+      "split": "test",
+      "answerable": false,
+      "expected_keywords": [],
+      "evidence": [],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-17-1",
+      "question": "在 typing 中，类型提示是怎样规定或使用的？",
+      "family_id": "library-typing",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "类型检查器",
+        "IDE"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1342e5587a7595a3",
+          "path": "library-typing.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 10,
+          "end_char": 35,
+          "evidence_hash": "42c07ece85fbb61a7745f931611cbb46745183d87673a5b5ec113ee63e188234",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-17-2",
+      "question": "在 typing 中，运行时是怎样规定或使用的？",
+      "family_id": "library-typing",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "不强制",
+        "运行时"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1342e5587a7595a3",
+          "path": "library-typing.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 36,
+          "end_char": 62,
+          "evidence_hash": "1aefb8d6341bc05eef632d56172a39630b5ada6b59a81b92da534a34fb31d370",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-17-3",
+      "question": "在 typing 中，Protocol是怎样规定或使用的？",
+      "family_id": "library-typing",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "Protocol",
+        "结构化子类型"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1342e5587a7595a3",
+          "path": "library-typing.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 63,
+          "end_char": 90,
+          "evidence_hash": "101af5fe57abb6ad70bee9e24374a29f6c8104e31245dc348259fe8646ade13b",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-17-4",
+      "question": "在 typing 中，TypedDict是怎样规定或使用的？",
+      "family_id": "library-typing",
+      "type": "exact_term",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "TypedDict",
+        "字符串键"
+      ],
+      "evidence": [
+        {
+          "doc_id": "1342e5587a7595a3",
+          "path": "library-typing.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 91,
+          "end_char": 117,
+          "evidence_hash": "6a882b371565f9b5f7bac16c3e68f54ca198dd1ca64f4eddfd2fe32eed7a80f9",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-18-1",
+      "question": "在 asyncio 中，用途是怎样规定或使用的？",
+      "family_id": "library-asyncio",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "async",
+        "await",
+        "并发"
+      ],
+      "evidence": [
+        {
+          "doc_id": "96d28938d88f2f3c",
+          "path": "library-asyncio.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 11,
+          "end_char": 42,
+          "evidence_hash": "0c51d86656e9ce03c0e43b477d49d1cf6bda5fdec4b93ac11cfedc109c0ad1b4",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-18-2",
+      "question": "在 asyncio 中，运行入口是怎样规定或使用的？",
+      "family_id": "library-asyncio",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "asyncio.run",
+        "事件循环"
+      ],
+      "evidence": [
+        {
+          "doc_id": "96d28938d88f2f3c",
+          "path": "library-asyncio.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 43,
+          "end_char": 69,
+          "evidence_hash": "c05dd812410b0d12d81374de7353eaaabab0feb1e715fcdc0f914706cf1060b2",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-18-3",
+      "question": "在 asyncio 中，任务是怎样规定或使用的？",
+      "family_id": "library-asyncio",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "create_task",
+        "任务"
+      ],
+      "evidence": [
+        {
+          "doc_id": "96d28938d88f2f3c",
+          "path": "library-asyncio.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 70,
+          "end_char": 106,
+          "evidence_hash": "4bad02cdec62b9f966e2a6ea5490d497d6ef883141ca39bf67dc22e66c52fb39",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-18-4",
+      "question": "在 asyncio 中，等待多个是怎样规定或使用的？",
+      "family_id": "library-asyncio",
+      "type": "exact_term",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "gather",
+        "汇总"
+      ],
+      "evidence": [
+        {
+          "doc_id": "96d28938d88f2f3c",
+          "path": "library-asyncio.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 107,
+          "end_char": 141,
+          "evidence_hash": "4f8d363308a6fc75b3cd7597fd68540a1021b318b3c462988fdda884dcf9037a",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-19-1",
+      "question": "在 concurrent.futures 中，高层接口是怎样规定或使用的？",
+      "family_id": "library-concurrent-futures",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "异步执行",
+        "高层接口"
+      ],
+      "evidence": [
+        {
+          "doc_id": "5c9ac1084a3e4924",
+          "path": "library-concurrent-futures.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 22,
+          "end_char": 58,
+          "evidence_hash": "e636ad5eb09f918f5c53d7ea5baf39167cf5b66f90c704bbd0f9a64718e7f396",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-19-2",
+      "question": "在 concurrent.futures 中，线程池是怎样规定或使用的？",
+      "family_id": "library-concurrent-futures",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "ThreadPoolExecutor",
+        "线程池"
+      ],
+      "evidence": [
+        {
+          "doc_id": "5c9ac1084a3e4924",
+          "path": "library-concurrent-futures.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 59,
+          "end_char": 88,
+          "evidence_hash": "a401d531901578436fdf6c24f2af9cedbd28fa29b970e1fefec9efd9619292d7",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-19-3",
+      "question": "在 concurrent.futures 中，进程池是怎样规定或使用的？",
+      "family_id": "library-concurrent-futures",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "ProcessPoolExecutor",
+        "进程池"
+      ],
+      "evidence": [
+        {
+          "doc_id": "5c9ac1084a3e4924",
+          "path": "library-concurrent-futures.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 89,
+          "end_char": 122,
+          "evidence_hash": "f3d2736beed2cd304d2fd35dbd1035c9531c192433c8d785f217710ca9ff7714",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-19-4",
+      "question": "在 concurrent.futures 中，Future是怎样规定或使用的？",
+      "family_id": "library-concurrent-futures",
+      "type": "exact_term",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "Future",
+        "结果"
+      ],
+      "evidence": [
+        {
+          "doc_id": "5c9ac1084a3e4924",
+          "path": "library-concurrent-futures.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 123,
+          "end_char": 146,
+          "evidence_hash": "802ea1b712b590f7d4b6f13d8ae02596ee6c40c7d0e108a077abc4a0b996861d",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-20-1",
+      "question": "在 hashlib 中，哈希算法是怎样规定或使用的？",
+      "family_id": "library-hashlib",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "SHA-2",
+        "SHA-3"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0676779e7cc7a971",
+          "path": "library-hashlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 11,
+          "end_char": 42,
+          "evidence_hash": "0090675b53d118b5954296fed5161c509489ff5d8d50a0b6c2ffcd03aee96d7d",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-20-2",
+      "question": "在 hashlib 中，输入类型是怎样规定或使用的？",
+      "family_id": "library-hashlib",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "update",
+        "字节"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0676779e7cc7a971",
+          "path": "library-hashlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 43,
+          "end_char": 66,
+          "evidence_hash": "4faaf4333084edf43486717d8942d61a41dcb957c8ec628878423a39390bb586",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-20-3",
+      "question": "在 hashlib 中，十六进制摘要是怎样规定或使用的？",
+      "family_id": "library-hashlib",
+      "type": "direct_fact",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "hexdigest",
+        "十六进制"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0676779e7cc7a971",
+          "path": "library-hashlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 67,
+          "end_char": 92,
+          "evidence_hash": "8bfda94afb2ef431e8ff9cad30510313ed1ee7029f17f50376d991a44c686fa6",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    },
+    {
+      "id": "py314-20-4",
+      "question": "在 hashlib 中，文件摘要是怎样规定或使用的？",
+      "family_id": "library-hashlib",
+      "type": "exact_term",
+      "split": "test",
+      "answerable": true,
+      "expected_keywords": [
+        "file_digest",
+        "文件对象"
+      ],
+      "evidence": [
+        {
+          "doc_id": "0676779e7cc7a971",
+          "path": "library-hashlib.md",
+          "source_version": "Python 3.14.7",
+          "start_char": 93,
+          "end_char": 128,
+          "evidence_hash": "8521f8b27c323fe8793d2630362be120088e684d6df7d2927ce01cc933b83da4",
+          "required": true
+        }
+      ],
+      "review_status": "pending_human"
+    }
+  ],
+  "dataset_hash": "91ab80b4a0852eed3b5d87f23a2dc5c5e1a9aabceb2d3426018f1055e17fad14"
+}
