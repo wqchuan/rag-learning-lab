@@ -190,7 +190,15 @@ def evaluate_answers(
     # Phase-one compatibility: this was the original name for answerable Recall@k.
     summary["evidence_hit_rate"] = summary["recall_at_5"]
     summary["correct_abstention_rate"] = summary["abstention_accuracy"]
-    return {"summary": summary, "results": results}
+    by_type: dict[str, dict[str, float | int | None]] = {}
+    for case_type in sorted({r["case"].get("type", "unknown") for r in results}):
+        subset = [r for r in answerable if r["case"].get("type", "unknown") == case_type]
+        by_type[case_type] = {
+            "case_count": len([r for r in results if r["case"].get("type", "unknown") == case_type]),
+            "recall_at_5": mean([float(r["recall_at_5"]) for r in subset]),
+            "mrr": mean([r["reciprocal_rank"] for r in subset]),
+        }
+    return {"summary": summary, "summary_by_type": by_type, "results": results}
 
 
 def run_evaluation(
