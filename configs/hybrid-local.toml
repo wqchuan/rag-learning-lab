@@ -1,0 +1,16 @@
+name = "hybrid-local"
+retriever = "hybrid-local"
+model = "BAAI/bge-small-zh-v1.5"
+model_revision = "main"
+query_instruction = false
+corpus = "data/corpora/python-3.14.7"
+dataset = "data/eval/python_docs_v2.json"
+index = "data/index-hybrid-local.json"
+k1 = 1.5
+b = 0.75
+rrf_k = 10
+chunk_size = 300
+overlap = 50
+candidates = 10
+context_count = 5
+min_score = 0.0

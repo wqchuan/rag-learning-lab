@@ -12,6 +12,7 @@ class Document:
     content_hash: str
     status: str = "ok"
     error: str | None = None
+    metadata: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -27,13 +28,14 @@ class Chunk:
     end_char: int
     start_line: int
     end_line: int
+    metadata: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
 
     @classmethod
     def from_dict(cls, value: dict[str, Any]) -> "Chunk":
-        return cls(**value)
+        return cls(**{**value, "metadata": value.get("metadata", {})})
 
 
 @dataclass(slots=True)
@@ -42,6 +44,7 @@ class RetrievalHit:
     score: float
     rank: int
     method: str = "vector"
+    details: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -49,6 +52,7 @@ class RetrievalHit:
             "score": self.score,
             "rank": self.rank,
             "method": self.method,
+            "details": self.details,
         }
 
 
@@ -60,6 +64,7 @@ class Answer:
     citations: list[str] = field(default_factory=list)
     hits: list[RetrievalHit] = field(default_factory=list)
     error: str | None = None
+    metadata: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -69,5 +74,5 @@ class Answer:
             "citations": self.citations,
             "hits": [hit.to_dict() for hit in self.hits],
             "error": self.error,
+            "metadata": self.metadata,
         }
-

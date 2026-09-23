@@ -5,7 +5,8 @@ import json
 from pathlib import Path
 
 from .embeddings import LocalHashingEmbedding
-from .evaluation import run_evaluation
+from .evaluation import run_evaluation, validate_dataset
+from .experiments import run_experiment
 from .indexing import build_index
 from .ingestion import load_documents
 from .pipeline import answer_question
@@ -55,6 +56,26 @@ def _evaluate(args: argparse.Namespace) -> int:
     return 0
 
 
+def _validate_eval(args: argparse.Namespace) -> int:
+    dataset = validate_dataset(args.cases, corpus_root=args.corpus)
+    print(json.dumps({
+        "dataset_id": dataset.get("dataset_id"),
+        "review_status": dataset.get("review_status"),
+        "sealed": dataset.get("sealed"),
+        **dataset["validation"],
+    }, ensure_ascii=False, indent=2))
+    return 0
+
+
+def _experiment(args: argparse.Namespace) -> int:
+    report = run_experiment(
+        args.config, allow_remote_api=args.allow_remote_api,
+        split=args.split, output_path=args.output,
+    )
+    print(json.dumps(report["summary"], ensure_ascii=False, indent=2))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="可检查的 RAG 学习实验室")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -83,6 +104,18 @@ def build_parser() -> argparse.ArgumentParser:
     evaluate.add_argument("--min-score", type=float, default=0.08)
     evaluate.add_argument("--generator", choices=["extractive", "openai"], default="extractive")
     evaluate.set_defaults(handler=_evaluate)
+
+    validate = subparsers.add_parser("validate-eval", help="校验题集结构与证据哈希")
+    validate.add_argument("--cases", type=Path, default=Path("data/eval/python_docs_v2.json"))
+    validate.add_argument("--corpus", type=Path, default=Path("data/corpora/python-3.14.7"))
+    validate.set_defaults(handler=_validate_eval)
+
+    experiment = subparsers.add_parser("experiment", help="按 TOML 配置运行可复现实验")
+    experiment.add_argument("--config", type=Path, required=True)
+    experiment.add_argument("--split", choices=["dev", "test", "all"], default="dev")
+    experiment.add_argument("--output", type=Path)
+    experiment.add_argument("--allow-remote-api", action="store_true")
+    experiment.set_defaults(handler=_experiment)
     return parser
 
 
@@ -90,7 +123,7 @@ def main() -> int:
     args = build_parser().parse_args()
     try:
         return args.handler(args)
-    except (OSError, ValueError) as exc:
+    except (OSError, ValueError, RuntimeError) as exc:
         print(f"错误: {exc}")
         return 1
 

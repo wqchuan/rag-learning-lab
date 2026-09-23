@@ -10,10 +10,11 @@ from pathlib import Path
 from typing import Any
 
 from .chunking import chunk_documents
-from .embeddings import LocalHashingEmbedding
+from .embeddings import EmbeddingBackend, LocalHashingEmbedding
 from .models import Chunk, Document
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
+SUPPORTED_SCHEMA_VERSIONS = {1, 2}
 
 
 def _corpus_hash(documents: list[Document]) -> str:
@@ -36,13 +37,14 @@ def build_index(
     *,
     chunk_size: int = 300,
     overlap: int = 50,
-    embedder: LocalHashingEmbedding | None = None,
+    embedder: EmbeddingBackend | None = None,
 ) -> dict[str, Any]:
     embedder = embedder or LocalHashingEmbedding()
     chunks = chunk_documents(documents, chunk_size=chunk_size, overlap=overlap)
     if not chunks:
         raise ValueError("没有可索引的文本片段")
-    vectors = embedder.embed([chunk.text for chunk in chunks])
+    is_private = any(doc.metadata.get("privacy") == "private" for doc in documents)
+    vectors = embedder.embed_documents([chunk.text for chunk in chunks], private=is_private)
     manifest = {
         "schema_version": SCHEMA_VERSION,
         "status": "complete",
@@ -55,6 +57,8 @@ def build_index(
         "chunk_overlap": overlap,
         "embedding_model": embedder.model_id,
         "embedding_dimension": embedder.dimension,
+        "embedding_provider": getattr(embedder, "provider", "unknown"),
+        "embedding_revision": getattr(embedder, "revision", "unknown"),
     }
     payload = {
         "manifest": manifest,
@@ -91,7 +95,7 @@ def load_index(
         raise ValueError(f"索引无法读取: {exc}") from exc
 
     manifest = payload.get("manifest", {})
-    if manifest.get("schema_version") != SCHEMA_VERSION or manifest.get("status") != "complete":
+    if manifest.get("schema_version") not in SUPPORTED_SCHEMA_VERSIONS or manifest.get("status") != "complete":
         raise ValueError("索引版本不受支持或索引未完整构建")
     if expected_model and manifest.get("embedding_model") != expected_model:
         raise ValueError("索引的向量模型与当前配置不匹配，请重新 build")

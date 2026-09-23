@@ -1,0 +1,15 @@
+name = "dense-api-siliconflow"
+retriever = "dense-api-siliconflow"
+model = "BAAI/bge-m3"
+corpus = "data/corpora/python-3.14.7"
+dataset = "data/eval/python_docs_v2.json"
+index = "data/index-dense-api-siliconflow.json"
+cache_path = ".cache/siliconflow_embeddings.json"
+timeout = 30
+retries = 2
+batch_size = 32
+chunk_size = 300
+overlap = 50
+candidates = 20
+context_count = 5
+min_score = 0.0
